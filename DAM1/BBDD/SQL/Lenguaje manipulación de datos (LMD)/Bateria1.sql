@@ -158,6 +158,14 @@ from EMP2, DEP2
 where LOC='Madrid'
 order by OFICIO
 
+/*33 BIS. Se desea conocer el nombre y el oficio de todos aquellos empleados que trabajan en
+Madrid. La salida estará ordenada por el campo Apellido.*/
+
+select apellido, oficio, LOC
+from EMP2, DEP2
+where LOC='Madrid'
+order by APELLIDO, OFICIO
+
 
 /*41. Obtener el apellido, departamento y oficio de aquellos empleados que tengan un oficio
 que esté en el departamento 20 y que no sea ninguno de los oficios que están en el
